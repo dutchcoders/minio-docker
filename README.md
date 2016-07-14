@@ -8,7 +8,7 @@ docker build .
 
 # Run
 ```sh
-docker run -d -v /data/disk1:/minio/data -v /data/config:/minio/config -p 9000:9000 -e MINIO_ACCESS_KEY=remco -e MINIO_SECRET_KEY=remcoremco d4b3
+docker run -d -v /data/disk1:/minio/data -v /data/config:/minio/config -p 9000:9000 #minio_image#
 ```
 
 ## Volumes
@@ -21,7 +21,7 @@ docker run -d -v /data/disk1:/minio/data -v /data/config:/minio/config -p 9000:9
 * **MINIO_SECRET_KEY** predefined secret key
 
 ```sh
-docker run -d -v /data/disk1:/minio/data -v /data/config:/minio/config -p 9000:9000 -e MINIO_ACCESS_KEY=remco -e MINIO_SECRET_KEY=remcoremco d4b3
+docker run -d -v /data/disk1:/minio/data -v /data/config:/minio/config -p 9000:9000 -e MINIO_ACCESS_KEY=#accesskey# -e MINIO_SECRET_KEY=#supersecretkey# #minio_image#
 ```
 
 * **MINIO_CACHE_SIZE** defaults to 8g
